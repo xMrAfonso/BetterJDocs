@@ -281,6 +281,10 @@ ul.sub-nav-list li {
   color: var(--hover-color);
   text-transform: uppercase;
 }
+
+#navbar-toggle-button {
+  display: none;
+}
 .nav-bar-cell1-rev {
   color: var(--secondary-color) !important;
   margin: auto 5px;
