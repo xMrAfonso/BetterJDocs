@@ -18,7 +18,7 @@ javadoc {
 ### Using other methods:
 - I only use Gradle, if you know how to do it in any other way, please consider contributing.
 
-## How to costumize
+## How to customize
 If you dislike the default colors, or just want to modify it to fit your own projects, you can _modify_ the colors by **opening the stylesheet**.
 
 | Variable             | Description                                                          |
