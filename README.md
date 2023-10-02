@@ -12,7 +12,7 @@ If you want to check out a live demonstration, you may check [Hangar4J's JavaDoc
 ```gradle
 javadoc {
   // Your own configurations...
-  options.stylesheetFile = file('betterjdocs.css')
+  options.stylesheetFile = file('path/to/betterjdocs.css')
 }
 ```
 ### Using other methods:
