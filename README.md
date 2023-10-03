@@ -15,6 +15,54 @@ javadoc {
   options.stylesheetFile = file('path/to/betterjdocs.css')
 }
 ```
+### Using Maven:
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.4.1</version> <!-- Make sure to update if outdated -->
+            <configuration>
+                <!-- Your own configurations... -->
+                <stylesheetfile>./path/to/betterjdocs.css</stylesheetfile>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
+
+<details><summary>Multi-module setup (Based on Maven docs example)</summary>
+<p>
+
+You set this in the root/parent `pom.xml` and use `mvn javadoc:aggregate`
+```xml
+<build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>irg.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.4.1</version> <!-- Make sure to update if outdated -->
+            </plugin>
+        </plugins>
+    </pluginManagement>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.4.1</version> <!-- Make sure to update if outdated -->
+            <configuration>
+                <!-- Your own configurations... -->
+                <stylesheetfile>./path/to/betterjdocs.css</stylesheetfile>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
+
+</p></details>
+
 ### Using other methods:
 - I only use Gradle, if you know how to do it in any other way, please consider contributing.
 
