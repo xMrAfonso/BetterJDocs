@@ -160,6 +160,7 @@ button {
 
 ::-webkit-scrollbar {
   width: 10px;
+  height: 8px;
   background: transparent;
 }
 
@@ -197,6 +198,7 @@ button {
 
 #navbar-top-firstrow {
   margin-block: 0.75rem;
+  overflow-x: auto;
 }
 .top-nav {
   background-color: var(--bg-900-color);
@@ -208,6 +210,7 @@ button {
   min-height: 2.8em;
   overflow: hidden;
   font-size: 12px;
+  padding-top: 6px;
 }
 .sub-nav {
   background-color: var(--bg-800-color);
@@ -231,7 +234,7 @@ ul.nav-list {
   display: flex;
   justify-content: left;
   margin: auto;
-  margin-left: 0.8rem;
+  margin-inline: 0.8rem;
   padding: 0;
 }
 ul.sub-nav-list {
@@ -246,6 +249,10 @@ ul.nav-list li {
   padding: 5px 6px;
   text-transform: uppercase;
   color: var(--description-color);
+}
+
+#navbar-toggle-button {
+  display: none;
 }
 
 ul.nav-list li:first-child {
@@ -282,14 +289,12 @@ ul.sub-nav-list li {
   text-transform: uppercase;
 }
 
-#navbar-toggle-button {
-  display: none;
-}
 .nav-bar-cell1-rev {
   color: var(--secondary-color) !important;
   margin: auto 5px;
   background-color: var(--primary-color);
   border-radius: 5px;
+  margin-bottom: 8px;
 }
 .skip-nav {
   position: absolute;
@@ -313,18 +318,32 @@ ul.sub-nav-list li {
   color: var(--secondary-color);
   margin: 10px 0;
 }
-main > .sub-title {
+main > .sub-title,
+.page-search-info,
+#result-container {
   margin: 5px 0 0 0;
   font-size: 13px;
   color: var(--description-color);
   background-color: var(--bg-900-color);
   border: solid 1px transparent;
   margin-top: 0.5rem;
-  padding-left: 0.65rem;
+  padding-inline: 0.65rem;
   margin-bottom: 0.5rem;
   border-radius: 5px;
+  padding-block: 1px;
+}
+#search-redirect {
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
 }
 
+#search-redirect::after {
+  content: "";
+  display: none;
+}
 .sub-title > h2, h3 {
   color: var(--secondary-color);
 }
@@ -358,7 +377,7 @@ body.class-declaration-page .summary h3,
 body.class-declaration-page .details h3,
 body.class-declaration-page .summary .inherited-list h2 {
   background-color: var(--bg-700-color);
-  border-bottom: solid 1px transparent;
+  border: solid 1px transparent;
   border-radius: 5px 5px 0 0;
   margin: 0 0 6px -8px;
   padding: 7px 8px;
@@ -474,11 +493,14 @@ ul.see-list-long li:not(:last-child):after {
 .details-table {
   width: 100%;
   padding: 0;
-  border-inline: solid 1px transparent;
-  border-top: solid 1px transparent;
+  border: solid 1px transparent;
   border-radius: 5px;
 }
 
+footer > hr {
+  display: none;
+  text-align: center;
+}
 .three-column-summary > div:nth-child(4) {
   border-top-left-radius: 5px;
 }
@@ -536,10 +558,19 @@ ul.see-list-long li:not(:last-child):after {
   display: inline-block;
   border: none;
   font-size: 1rem;
+  padding-left: 0;
+  background: transparent;
 }
 div.table-tabs {
   padding: 1rem 0 1rem 1px;
   margin: 0;
+}
+
+#page-search-expand {
+  display: none;
+}
+#result-container > .table-tabs:last-child {
+  padding-block: 0px;
 }
 div.table-tabs > button {
   border: none;
@@ -589,6 +620,9 @@ div.table-tabs > button:last-child {
   .two-column-summary {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  ul.nav-list {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 800px) {
@@ -913,24 +947,31 @@ ul.ui-autocomplete li {
   font-weight: bold;
   color: var(--secondary-color);
 }
-#search-input {
-  background-image: url("https://imgur.com/CGJ4obZ");
-  background-size: 13px;
-  background-repeat: no-repeat;
-  background-position: 8px 9px;
+#search-input,
+#page-search-input {
   background-color: var(--bg-600-color);
   border: solid 1px var(--bg-600-color);
   border-radius: 5px;
   height: 1.85rem;
   color: var(--description-color);
-  padding-left: 25px;
+  padding-left: 8px;
   margin-left: 20px;
-  width: 600px;
+  width: 60vh;
   margin-top: 0.5rem;
   position: relative;
+  max-width: 600px;
 }
 
-#reset-button {
+#page-search-input {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 85%;
+  padding-right: 15px;
+}
+
+#reset-button,
+#page-search-reset {
   background-color: transparent;
   background-image: url("resources/x.png");
   background-position: center;
@@ -940,7 +981,7 @@ ul.ui-autocomplete li {
   width: 16px;
   height: 16px;
   position: relative;
-  left: -30px;
+  left: -32px;
   top: -0.3rem;
   font-size: 0px;
 }
