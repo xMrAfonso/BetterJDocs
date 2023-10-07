@@ -2,7 +2,9 @@
 
 This theme was specifically made to replace the old JavaDocs' Interface with a much needed improved version of its design & layout while being limited only to CSS.
 
-If you want to check out a live demonstration, you may check [Hangar4J's JavaDocs](https://javadoc.jitpack.io/com/github/xmrafonso/hangar4j/63855dea54/javadoc/).
+To check out a live demonstration, go to [Hangar4J's JavaDocs](https://javadoc.jitpack.io/com/github/xmrafonso/hangar4j/63855dea54/javadoc/).
+
+If you like this resource, don't forget to leave a **Star <3.**
 
 ## How to install
 1. Download the [stylesheet from GitHub](https://raw.githubusercontent.com/xMrAfonso/BetterJDocs/master/betterjdocs.css). (`betterjdocs.css`)
