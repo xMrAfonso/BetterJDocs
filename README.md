@@ -82,5 +82,52 @@ If you dislike the default colors, or just want to modify it to fit your own pro
 
 There are also comments explaining what each variable corresponds to and what it does inside the stylesheet. 
 
+### Color Palettes
+<details><summary>Dark Mode (Default)</summary>
+
+```css
+/* Mostly used on links & buttons */
+--primary-color: #4186f5;
+/* Used in fields, parameters, types, etc. */
+--secondary-color: #ffffff;
+/* Used specifically for descriptions and text */
+--description-color: #949494;
+/* Hover color for links */
+--hover-color: #76a6f4;
+/* Color for Top Navigation and Cards */
+--bg-900-color: #121212;
+/* Color used in the body's background */
+--bg-800-color: #171717;
+/* Mostly used for the odd row in tables */
+--bg-700-color: #1c1c1c;
+/* Mostly used for the even row in tables and used for the searchbar */
+--bg-600-color: #212121;
+```
+
+</details>
+
+<details><summary>Light Mode</summary>
+
+```css
+/* Mostly used on links & buttons */
+--primary-color: #185bc7;
+/* Used in fields, parameters, types, etc. */
+--secondary-color: #000000;
+/* Used specifically for descriptions and text */
+--description-color: #3f3e3e;
+/* Hover color for links */
+--hover-color: #76a6f4;
+/* Color for Top Navigation and Cards */
+--bg-900-color: #f0f0f0;
+/* Color used in the body's background */
+--bg-800-color: #e0e0e0;
+/* Mostly used for the odd row in tables */
+--bg-700-color: #d0d0d0 ;
+/* Mostly used for the even row in tables and used for the searchbar */
+--bg-600-color: #c0c0c0;
+```
+
+</details>
+
 ## Contact me
 If you have any questions or feedback, please contact me via Discord: `@mrafonso`.
