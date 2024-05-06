@@ -2,7 +2,7 @@
 
 This theme was specifically made to replace the old JavaDocs' Interface with a much needed improved version of its design & layout while being limited only to CSS.
 
-To check out a live demonstration, go to [Hangar4J's JavaDocs](https://javadoc.jitpack.io/com/github/xmrafonso/hangar4j/63855dea54/javadoc/).
+To check out a live demonstration, go to [Andre601's JavaDocs](https://jd.andre601.ch/asl-api/).
 
 If you like this resource, don't forget to leave a **Star <3.**
 
