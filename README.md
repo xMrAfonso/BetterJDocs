@@ -2,7 +2,7 @@
 
 This theme was specifically made to replace the old JavaDocs' Interface with a much needed improved version of its design & layout while being limited only to CSS.
 
-To check out a live demonstration, go to [Andre601's JavaDocs](https://jd.andre601.ch/asl-api/).
+To check out a live demonstration, go to [Andre601's JavaDocs](https://jd.andre601.ch/expressionparser/).
 
 If you like this resource, don't forget to leave a **Star <3.**
 
