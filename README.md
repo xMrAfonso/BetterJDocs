@@ -6,6 +6,9 @@ To check out a live demonstration, go to [Andre601's JavaDocs](https://jd.andre6
 
 If you like this resource, don't forget to leave a **Star <3.**
 
+# Archived
+Due to recent changes to JavaDocs and lack of time to fully update this, I decided to archive the project.
+
 ## How to install
 1. Download the [stylesheet from GitHub](https://raw.githubusercontent.com/xMrAfonso/BetterJDocs/master/betterjdocs.css). (`betterjdocs.css`)
 2. Place the file inside your project in a place of your choice.
